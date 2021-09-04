@@ -1,0 +1,15 @@
+<form *ngIf="showAddFriend" class="add-form" (ngSubmit)="onSubmit()">
+    <div class="form-control">
+        <label for="name">Name</label>
+        <input type="text" name="name" [(ngModel)]="name" id="name" placeholder="Friend's name">
+    </div>
+    <div class="form-control">
+        <label for="dateofbirth">Date of birth</label>
+        <input type="text" name="dateofbirth" [(ngModel)]="dateofbirth" id="dateofbirth" placeholder="Friend's date of birth">
+    </div>
+    <div class="form-control form-control-check">
+        <label for="family">Family</label>
+        <input type="checkbox" name="family" [(ngModel)]="family" id="family">
+    </div>
+    <input type="submit" value="Save friend" class="btn btn-block">
+</form>

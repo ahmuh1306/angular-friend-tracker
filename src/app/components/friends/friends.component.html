@@ -1,0 +1,2 @@
+<app-add-friend (onAddFriend)="addFriend($event)"></app-add-friend>
+<app-friend-individual *ngFor="let friend of friends" [friend]="friend" (onDeleteFriend)="deleteFriend(friend)" (onToggleFamily)="toggleFamily(friend)"></app-friend-individual>

@@ -1,0 +1,4 @@
+<div [ngClass]="{ family: friend.family }" class="friend" (dblclick)="onToggle(friend)">
+    <h3>{{ friend.name }} <fa-icon (click)="onDelete(friend)" [ngStyle]="{'color': 'red'}" [icon]="faTimes"></fa-icon></h3>
+    <p>{{ friend.dateofbirth }}</p>
+</div>
